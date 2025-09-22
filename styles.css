@@ -442,6 +442,22 @@ a.cta2:hover { background: var(--primary-600); color: #fff; transform: scale(1.0
   margin: 0 auto;
 }
 
+/* Modo claro (sin [data-theme="dark"]) */
+.testimonials h2,
+.testi figcaption {
+  color: #9476b6;   /* Negro para buena legibilidad */
+}
+
+/* Texto debajo de los videos de testimonios */
+/* Forzar color del figcaption en testimonios según tema */
+:is(html, body):not([data-theme="dark"]) .testimonials .testi > figcaption {
+  color: #9476b6 !important;  /* negro en modo claro */
+}
+
+:is(html, body)[data-theme="dark"] .testimonials .testi > figcaption {
+  color: #fff !important;  /* blanco en modo oscuro */
+}
+
 /* ===== VIDEO VERTICAL (9:16) ===== */
 .testi .video {
   position: relative;
