@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- =========================
+       METADATOS BÁSICOS
+       ========================= -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Curso de Sueroterapia — El Enfermero Amigo</title>
+  <meta name="description" content="Curso de Sueroterapia con acceso de por vida, material descargable, comunidad privada y certificado. Precio promocional: 600.000 COP.">
+  <meta name="theme-color" content="#a68ac7" />
+
+  <!-- También puedes usar PNG (mejor en alta resolución) -->
+  <link rel="icon" type="image/png" href="favicon.jpg">
+
+  <!-- (Opcional) Canonical: reemplaza por tu URL final -->
+  <link rel="canonical" href="https://tusitio.com/curso-sueroterapia" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- =========================
+       SOCIAL / OPEN GRAPH
+       ========================= -->
+  <meta property="og:site_name" content="El Enfermero Amigo">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Curso de Sueroterapia — El Enfermero Amigo">
+  <meta property="og:description" content="Aprende técnicas seguras y efectivas. Acceso de por vida, materiales y certificado. Promoción: 600.000 COP.">
+  <meta property="og:url" content="https://tusitio.com/curso-sueroterapia">
+  <meta property="og:image" content="https://tusitio.com/155.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="es_CO">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Curso de Sueroterapia — El Enfermero Amigo">
+  <meta name="twitter:description" content="Aprende sueroterapia paso a paso. Acceso de por vida + certificado. Promoción: 600.000 COP.">
+  <meta name="twitter:image" content="https://tusitio.com/155.jpg">
+
+  <!-- =========================
+       DATOS ESTRUCTURADOS (SEO)
+       ========================= -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Curso de Sueroterapia",
+    "description": "Aprende sueroterapia paso a paso con técnicas seguras y efectivas. Incluye acceso de por vida, material descargable, comunidad privada y certificado.",
+    "image": "https://tusitio.com/155.jpg",
+    "provider": {
+      "@type": "Organization",
+      "name": "El Enfermero Amigo",
+      "url": "https://tusitio.com"
+    },
+    "hasCourseInstance": [{
+      "@type": "CourseInstance",
+      "courseMode": "online",
+      "isAccessibleForFree": false,
+      "offers": {
+        "@type": "Offer",
+        "price": "600000",
+        "priceCurrency": "COP",
+        "availability": "https://schema.org/InStock",
+        "url": "https://tusitio.com/curso-sueroterapia"
+      }
+    }]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"¿El curso es online o presencial?","acceptedAnswer":{"@type":"Answer","text":"El contenido principal es online para que avances a tu ritmo. Las prácticas y sesiones en vivo se anuncian en la comunidad privada cuando están disponibles."}},
+      {"@type":"Question","name":"¿Entrego certificado al terminar?","acceptedAnswer":{"@type":"Answer","text":"Sí. Al completar los contenidos y evaluaciones se emite un certificado digital de finalización."}},
+      {"@type":"Question","name":"¿Cuánto tiempo tengo acceso?","acceptedAnswer":{"@type":"Answer","text":"Acceso de por vida a las lecciones y futuras actualizaciones del material."}},
+      {"@type":"Question","name":"¿A quién va dirigido?","acceptedAnswer":{"@type":"Answer","text":"A profesionales y estudiantes del área de la salud interesados en sueroterapia. Verifica siempre la normativa y requisitos habilitantes en tu región."}},
+      {"@type":"Question","name":"¿Qué formas de pago aceptan?","acceptedAnswer":{"@type":"Answer","text":"Puedes pagar por transferencia y medios digitales locales. Si prefieres tarjeta, escríbenos por WhatsApp para compartirte el enlace de pago seguro."}},
+      {"@type":"Question","name":"¿Hay devolución o garantía?","acceptedAnswer":{"@type":"Answer","text":"Contamos con una política de soporte y satisfacción. Escríbenos por WhatsApp para conocer las condiciones aplicables en tu caso."}}
+    ]
+  }
+  </script>
+
+  <!-- =========================
+       TIPOGRAFÍAS (con preconnect)
+       ========================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- =========================
+       CSS PRINCIPAL
+       ========================= -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="page">
+    <!-- Barra de progreso de scroll -->
+    <div id="progress" aria-hidden="true"></div>
+
+    <!-- Botón tema claro/oscuro -->
+    <button class="toggle-theme" onclick="toggleTheme()" aria-label="Cambiar tema"><span>🌙</span></button>
+
+    <!-- Contenido principal -->
+    <main id="contenido" class="page-main" role="main">
+      <div class="wrap">
+        <!-- ===== HERO ===== -->
+        <section class="hero" aria-labelledby="t-hero">
+          <h1 id="t-hero">CURSO DE SUEROTERAPIA</h1>
+          <p class="subtitle">Aprende paso a paso con técnicas seguras y efectivas.</p>
+
+          <!-- Beneficios -->
+          <div class="features" aria-label="Beneficios del curso">
+            <div class="feature">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M7 10V7a5 5 0 1110 0v3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="5" y="10" width="14" height="11" rx="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Acceso de por vida</span>
+            </div>
+            <div class="feature">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Material descargable</span>
+            </div>
+            <div class="feature">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Comunidad privada</span>
+            </div>
+            <div class="feature">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M20 14V6a2 2 0 00-2-2H6a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2zM12 22l-4-4h8l-4 4z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Certificado al terminar</span>
+            </div>
+          </div>
+
+          <!-- VIDEO PRINCIPAL DEL CURSO -->
+          <div class="video video--small">
+            <video src="video.mp4" controls autoplay muted playsinline></video>
+          </div>
+
+          <!-- Separador -->
+          <div class="divider" role="separator" aria-hidden="true"></div>
+
+          <!-- Galería -->
+          <section class="eventos" aria-label="Galería de clases">
+            <div class="eventos-grid">
+              <figure class="evento">
+                <img
+                  src="154.jpg"
+                  alt="Clase de Sueroterapia Avanzada en Pasto"
+                  loading="lazy" decoding="async"
+                  width="1000" height="667" />
+              </figure>
+              <figure class="evento">
+                <img
+                  src="155.jpg"
+                  alt="Curso de Sueroterapia Profesional en Pasto y Cali"
+                  loading="lazy" decoding="async"
+                  width="1000" height="667" />
+              </figure>
+            </div>
+          </section>
+        </section>
+      </div> <!-- /wrap -->
+
+      <!-- Instructores -->
+      <div class="wrap">
+        <section class="main" aria-label="Equipo docente">
+          <div class="instructors-grid">
+            <aside class="card pad" aria-labelledby="t-instructor">
+              <div class="instructor">
+                <div class="avatar" aria-hidden="true">
+                  <img
+                    alt="Instructor principal"
+                    src="enfermero.png"
+                    loading="lazy" decoding="async" width="120" height="120" />
+                </div>
+                <div>
+                  <h2 id="t-instructor">SOBRE EL INSTRUCTOR</h2>
+                  <p>Jhon Valencia - Profesional con experiencia en Sueroterapia y Marketing Digital Profesional.</p>
+                  <ul class="bullets">
+                    <li>Dueño del Blog El Enfermero Amigo</li>
+                    <li>Enfoque en seguridad del paciente</li>
+                    <li>Docente invitado en talleres nacionales</li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+
+            <aside class="card pad" aria-labelledby="t-exp">
+              <div class="instructor">
+                <div class="avatar" aria-hidden="true">
+                  <img
+                    alt="Instructor en práctica clínica"
+                    src="enfermera.jpg"
+                    loading="lazy" decoding="async" width="120" height="120" />
+                </div>
+                <div>
+                  <h2 id="t-exp">SOBRE EL INSTRUCTOR</h2>
+                  <p>Andrea Romero - Especialista en Medicina Biorreguladora y Homeopata y Fundadora de Vitalia Medicina Integral</p>
+                  <ul class="bullets">
+                    <li>Creadora del curso de Sueroterapia para Emprendedores</li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <!-- Sobre el curso -->
+        <article class="about-card card pad" aria-labelledby="t-about">
+          <h2 id="t-about">SOBRE EL CURSO</h2>
+          <p>Aprenderás desde fundamentos hasta protocolos avanzados de sueroterapia con enfoque en seguridad, práctica guiada y recursos actualizados.</p>
+          <p>En este curso aprenderás los fundamentos teóricos y prácticos de la sueroterapia, desde la normatividad y los protocolos de seguridad, hasta la valoración del paciente y la correcta administración de terapias.</p>
+          <ul class="bullets">
+            <p>CONOCERAS:</p>
+            <li>Los 14 correctos de la sueroterapia y las normas que regulan su práctica.</li>
+            <li>Los principales tipos de soluciones, medicamentos y organopreparados usados en medicina biorreguladora, ortomolecular y homeopatía.</li>
+            <li>La fisiología del cuerpo y el papel de órganos clave como hígado, riñones, colon y sistema linfático.</li>
+            <li>Cómo manejar complicaciones, calcular el factor goteo, y aplicar técnicas como fluidoterapia, barrido arterial y uso de antioxidantes (vitamina C, glutatión, ácido alfa lipoico).</li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- Temario (Acordeón) -->
+      <div class="wrap">
+        <section class="card pad accordion" aria-labelledby="t-contenido">
+          <h2 id="t-contenido">Contenido del curso</h2>
+
+          <details>
+            <summary>
+              <svg class="summary-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Módulo 1: Fundamentos de la Sueroterapia
+            </summary>
+            <ul class="bullets">
+              <li>Normatividad y aspectos legales.</li>
+              <li>Los 14 correctos de la sueroterapia.</li>
+              <li>Secuencialidad de las terapias.</li>
+              <li>Área de procedimientos y protocolos.</li>
+              <li>Disposición de residuos.</li>
+              <li>Análisis y valoración integral del paciente.</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>
+              <svg class="summary-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Módulo 2: Medicina Complementaria y Bases Conceptuales
+            </summary>
+            <ul class="bullets">
+              <li>Definiciones básicas.</li>
+              <li>Introducción a la medicina biorreguladora y ortomolecular.</li>
+              <li>Homeopatía y sus leyes.</li>
+              <li>Medicamentos y organopreparados.</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>
+              <svg class="summary-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Módulo 3: Fisiología y Órganos Principales
+            </summary>
+            <ul class="bullets">
+              <li>Circulación mayor, menor y microcirculación.</li>
+              <li>Función de los órganos principales:</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>
+              <svg class="summary-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Módulo 4: Sueroterapia Aplicada
+            </summary>
+            <ul class="bullets">
+              <li>Tipos de soluciones.</li>
+              <li>Fluidoterapia.</li>
+              <li>Los NO de la sueroterapia.</li>
+              <li>Factor goteo y cálculos prácticos.</li>
+              <li>Complicaciones frecuentes y crisis curativa.</li>
+              <li>Vía inhalatoria y su fisiología.</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>
+              <svg class="summary-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Módulo 5: Antioxidantes, Terapias y Medicamentos
+            </summary>
+            <ul class="bullets">
+              <li>Estrés oxidativo y homotoxicología.</li>
+              <li>Terapias con:</li>
+              <ul>
+                <li>Ácido alfa lipoico.</li>
+                <li>Glutatión.</li>
+                <li>Vitamina C (uso en pacientes oncológicos).</li>
+              </ul>
+              <li>Barrido arterial y azul de metileno.</li>
+              <li>Uso clínico de organopreparados:</li>
+              <ul>
+                <li>Heel.</li>
+                <li>LHA</li>
+                <li>Homeociens</li>
+              </ul>
+            </ul>
+          </details>
+
+          <details>
+            <summary>
+              <svg class="summary-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Incluye
+            </summary>
+            <ul class="bullets">
+              <li>Ampollas homeopaticas para la practica.</li>
+              <li>Un torniquete</li>
+              <li>Isopañiles</li>
+              <li>Cateter Pericraneal</li>
+              <li>Equipo macrogoteo</li>
+              <li>Solucion Salina</li>
+              <li>Jeringas</li>
+              <li>Cinta Transpore</li>
+              <li>Tapabocas</li>
+              <li>Guantes</li>
+              <li>Cofia</li>
+            </ul>
+          </details>
+        </section>
+
+        <!-- Promoción + CTA + Contador -->
+        <section class="pricing" aria-labelledby="t-promocion">
+          <span class="badge" id="t-promocion">EN PROMOCIÓN</span>
+
+          <div class="prices" aria-live="polite">
+            <div class="before">Antes: <span class="value">800.000</span></div>
+            <div class="now">Ahora: 600.000</div>
+          </div>
+
+          <a class="cta" id="cta-wa" href="#" target="_blank" rel="noopener">
+            Inscribirme ahora
+          </a>
+
+          <a class="cta2" id="cta-wa" href="https://checkout.bold.co/payment/LNK_UK4E7J8X04" target="_blank" rel="noopener">
+            Pago en Linea
+          </a>
+
+          <!-- Frase agregada -->
+          <p class="inscritos">
+            Ya van <strong id="contador">19</strong> personas inscritas a nivel nacional,
+            <span class="alerta">NO PIERDAS LA OPORTUNIDAD</span>
+          </p>
+
+          <div class="countdown" id="countdown" aria-live="polite">
+            <div class="unit"><span class="num" id="d">00</span><span class="label">Días</span></div>
+            <div class="unit"><span class="num" id="h">00</span><span class="label">Horas</span></div>
+            <div class="unit"><span class="num" id="m">00</span><span class="label">Minutos</span></div>
+            <div class="unit"><span class="num" id="s">00</span><span class="label">Segundos</span></div>
+          </div>
+        </section>
+      </div>
+
+      <!-- =========================
+           TESTIMONIOS (3 videos)
+           ========================= -->
+      <div class="wrap">
+        <section class="testimonials card pad" aria-labelledby="t-testimonios">
+          <h2 id="t-testimonios">Testimonios de Estudiantes</h2>
+          <div class="testi-grid" role="list">
+            <figure class="testi" role="listitem">
+              <div class="video">
+                <video controls playsinline preload="metadata" poster="poster-1.jpg">
+                  <source src="testimonio1.mp4" type="video/mp4" />
+                  Tu navegador no soporta video HTML5.
+                </video>
+              </div>
+              <figcaption>“Me sentí segura aplicando lo aprendido desde la primera práctica.”</figcaption>
+            </figure>
+
+            <figure class="testi" role="listitem">
+              <div class="video">
+                <video controls playsinline preload="metadata" poster="poster-2.jpg">
+                  <source src="testimonio2.mp4" type="video/mp4" />
+                  Tu navegador no soporta video HTML5.
+                </video>
+              </div>
+              <figcaption>“Excelentes protocolos y enfoque en seguridad del paciente.”</figcaption>
+            </figure>
+
+            <figure class="testi" role="listitem">
+              <div class="video">
+                <video controls playsinline preload="metadata" poster="poster-3.jpg">
+                  <source src="testimonio3.mp4" type="video/mp4" />
+                  Tu navegador no soporta video HTML5.
+                </video>
+              </div>
+              <figcaption>“Los recursos descargables me facilitaron el trabajo diario.”</figcaption>
+            </figure>
+          </div>
+        </section>
+      </div>
+      <!-- =========================
+           /TESTIMONIOS
+           ========================= -->
+
+      <!-- FAQ -->
+      <div class="wrap" id="faq">
+        <section class="card pad accordion" aria-labelledby="t-faq">
+          <h2 id="t-faq">Preguntas frecuentes</h2>
+
+          <details>
+            <summary>
+              <svg class="summary-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              ¿El curso es online o presencial?
+            </summary>
+            <p>El curso principal es 100% presencial y estaremos en las ciudades de:</p>
+            <ul>
+              <li>Pasto - 4 y 5 de Octubre del 2025</li>
+              <li>Cali - 18 y 19 de Octubre del 2025</li>
+              <li>Pereira - 1 y 2 de Noviembre del 2025</li>
+              <li>Medellin - 15 y 16 de Noviembre del 2025</li>
+              <li>Bogota - 29 y 30 de Noviembre del 2025</li>
+            </ul>
+            <p>De esta forma tendras un avance mucho mas rapido mediante practicas en vivo y supervisadas.</p>
+            <p>Si lo deseas tomar de manera online por Hotmart da click 
+            <a href="https://go.hotmart.com/T99681494N" target="_blank" rel="noopener noreferrer">aquí</a></p>
+            <p>Si lo deseas tomar por Zoom da click 
+            <a href="https://wa.me/573116023717?text=Quiero%20Tomar%20el%20Curso%20de%20Manera%20Virtual" target="_blank" rel="noopener noreferrer">aquí</a></p>
+          </details>
+
+          <details>
+            <summary>
+              <svg class="summary-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              ¿Entregan certificado al terminar?
+            </summary>
+            <p>Sí, al finalizar satisfactoriamente las lecciones y evaluaciones recibirás un certificado.</p>
+          </details>
+
+          <details>
+            <summary>
+              <svg class="summary-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              ¿Tengo derecho a acompañamiento Pos-Curso?
+            </summary>
+            <p>Se le brinda un acompañamiento de manera virtual por 3 meses.</p>
+          </details>
+
+          <details>
+            <summary>
+              <svg class="summary-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              ¿A quién va dirigido?
+            </summary>
+            <p>Dirigido a profesionales (Enfermeros, Medicos, Fisoterapeutas, Esteticistas) y estudiantes del área de la salud.</p>
+          </details>
+
+          <details>
+            <summary>
+              <svg class="summary-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              ¿Qué formas de pago aceptan?
+            </summary>
+            <p>Transferencia bancaria y medios digitales locales. Si prefieres tarjeta, escríbenos por WhatsApp y te compartimos un enlace de pago seguro.</p>
+          </details>
+
+          <details>
+            <summary>
+              <svg class="summary-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              ¿Porque deberias hacer este curso?
+            </summary>
+            <p>Gana más dinero con cada aplicación:
+            <p>Un solo suero puede generar entre $80.000 y 180.000, ¡y con solo 10 pacientes al mes ya recuperas tu inversión!</p>
+            <p>Empieza a trabajar de inmediato:</p>
+            <p>Recibirás protocolos listos para aplicar, prácticas reales y acompañamiento. No necesitas experiencia previa en sueroterapia.</p>
+            <p>Ofrece tratamientos en tendencia y muy buscados:</p>
+            <p>Megadosis de vitamina C, NAD+, azul de metileno y más, con beneficios para energía, inmunidad, piel, antienvejecimiento y prevención de enfermedades.</p>
+            <p>Diferénciate del resto:</p>
+            <p>Amplía tu portafolio como enfermero, médico, esteticista o fisioterapeuta con técnicas innovadoras y efectivas.</p>
+            <P>Trabaja desde casa o en consultorio:</p>
+            <p>Atiende a domicilio o crea tu propia unidad de bienestar con productos de alta rotación y clientes recurrentes.</p>
+          </details>
+        </section>
+      </div>
+    </main>
+
+    <!-- Redes Sociales -->
+    <section class="social" aria-labelledby="t-social">
+      <h2 id="t-social">Síguenos en Redes</h2>
+
+      <nav class="social-links" aria-label="Enlaces a redes sociales">
+        <a href="https://www.facebook.com/elenfermeroamigo" target="_blank" rel="noopener noreferrer" aria-label="Facebook" data-tooltip="Facebook">
+          <i class="fa-brands fa-facebook-f" aria-hidden="true"></i><span class="sr-only">Facebook</span>
+        </a>
+        <a href="https://www.instagram.com/enfermeroscolombiadeleje/?hl=es-la" target="_blank" rel="noopener noreferrer" aria-label="Instagram" data-tooltip="Instagram">
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i><span class="sr-only">Instagram</span>
+        </a>
+        <a href="https://www.youtube.com/@andrearomero9895" target="_blank" rel="noopener noreferrer" aria-label="YouTube" data-tooltip="YouTube">
+          <i class="fa-brands fa-youtube" aria-hidden="true"></i><span class="sr-only">YouTube</span>
+        </a>
+         <a href="https://chat.whatsapp.com/GTr3iAZePupKFIvLLdEZnr?mode=ems_copy_t" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" data-tooltip="Bienvenido a la Comunidad">
+      <i class="fa-brands fa-whatsapp" aria-hidden="true"></i><span class="sr-only">WhatsApp</span>
+         </a>
+      </nav>
+    </section>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+      <div class="footer-inner">
+        © <span id="y"></span> El Enfermero Amigo · Todos los derechos reservados
+      </div>
+    </footer>
+  </div> <!-- /.page -->
+
+  <!-- JS principal -->
+  <script src="app.js" defer></script>
+</body>
+</html>
